@@ -3,6 +3,9 @@
 # Install Go
 sudo apt-get install -y golang
 
+# Install Mercurial
+sudo apt-get install -y mercurial
+
 # Setup Go Path
 echo -e "export GOPATH=/srv/go\nexport PATH=$PATH:/srv/go/bin" | tee ~/.bash_profile ~/.bashrc
 . ~/.bash_profile
