@@ -3,8 +3,12 @@
 # Install Go
 sudo apt-get install -y golang
 
-# Install Mercurial
+# Install Mercurial, Subversion, Git, Bzr, and CVS Version Control Systems
 sudo apt-get install -y mercurial
+sudo apt-get install -y subversion
+sudo apt-get install -y git
+sudo apt-get install -y bzr
+sudo apt-get install -y cvs
 
 # Setup Go Path
 echo -e "export GOPATH=/srv/go\nexport PATH=$PATH:/srv/go/bin" | tee ~/.bash_profile ~/.bashrc
