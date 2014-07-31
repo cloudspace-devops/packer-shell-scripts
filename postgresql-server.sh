@@ -5,3 +5,6 @@ sudo apt-get install -y postgresql-9.3 postgresql-contrib-9.3 postgresql-client-
 
 # Set password for postgres database user
 sudo -u postgres psql postgres postgres -c "ALTER USER postgres WITH PASSWORD 'postgres'"
+
+# allow all users to access postgres locally from any user
+echo "local   all             all                                     md5" >> /etc/postgresql/9.3/main/pg_hba.conf
