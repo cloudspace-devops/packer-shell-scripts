@@ -30,8 +30,9 @@ cd ~/.rbenv
 #rbenv install --keep 2.0.0-p481
 #rbenv install --keep 2.1.0
 #rbenv install --keep 2.1.1
-rbenv install --keep 2.1.2
-rbenv global 2.1.2
+#rbenv install --keep 2.1.2
+rbenv install --keep 2.1.4
+rbenv global 2.1.4
 ruby -v
 echo -e "install: --no-ri --no-rdoc\nupdate: --no-ri --no-rdoc" > ~/.gemrc
 
@@ -51,12 +52,15 @@ gem install bullet
 gem install cancan
 gem install capistrano
 gem install capistrano-rails
+gem install capistrano-resque
 gem install capybara
 gem install carrierwave
 gem install chronic
+gem install clint_eastwood
 gem install coffee-rails
 gem install countries
 gem install css3-progress-bar-rails
+gem install dalli
 gem install database_cleaner
 gem install devise
 gem install exception_notification
@@ -103,6 +107,7 @@ gem install rack-rewrite
 gem install rails
 gem install rails_best_practices
 gem install redcarpet
+gem install resque
 gem install rest-client
 gem install rolify
 gem install rspec
