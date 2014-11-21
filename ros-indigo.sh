@@ -13,6 +13,7 @@ sudo apt-get install -y ros-indigo-desktop-full
 # Initialize rosdep
 sudo rosdep init
 rosdep update
+sudo chmod 777 /opt/ros/indigo/setup.bash
 
 # Setup environment
 echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
