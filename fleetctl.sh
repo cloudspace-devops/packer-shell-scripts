@@ -1,7 +1,7 @@
 #!/bin/bash -eux
 
 # Set fleet version
-FLEET="v0.3.3"
+FLEET="v0.8.3"
 
 # Install fleet
 sudo wget https://github.com/coreos/fleet/releases/download/$FLEET/fleet-$FLEET-linux-amd64.tar.gz
