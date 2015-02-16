@@ -1,11 +1,17 @@
 #!/bin/bash -eux
 
-sudo apt-get install -y docker.io
-sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
 
 # Add user to docker group
 sudo usermod -a -G docker `eval whoami`
 
-# Enable memory and swap accounting
-sudo sed -i 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"/' /etc/default/grub
-sudo update-grub
+# Setup access for the docker group
+sudo chgrp docker /usr/bin/docker
+sudo rm -f /usr/local/bin/docker
+sudo ln -s /usr/bin/docker /usr/local/bin/docker
+
+# Confirm install worked
+docker -v
+
+
+
