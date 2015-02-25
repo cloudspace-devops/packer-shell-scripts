@@ -3,10 +3,6 @@
 # Install ruby and rails
 sudo apt-get install -y git-core curl zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties make libv8-dev libqt4-dev
 
-# Set default Git user
-git config --global user.name "Cloudspace"
-git config --global user.email "info@cloudspace.com"
-
 # Install rbenv
 git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
 
